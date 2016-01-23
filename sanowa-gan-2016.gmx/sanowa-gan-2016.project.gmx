@@ -50,6 +50,15 @@
       <object>objects\obj_EnemySpawner</object>
     </objects>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_Game</room>
+  </rooms>
+  <constants number="4">
+    <constant name="PLAYER_ROTATION">3</constant>
+    <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
+    <constant name="PLAYER_SPEED_SHOOT">5</constant>
+    <constant name="PLAYER_SPEED_RUN">5</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
