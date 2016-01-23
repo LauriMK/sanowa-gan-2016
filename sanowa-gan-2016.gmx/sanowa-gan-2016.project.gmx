@@ -5,7 +5,35 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Player">
+      <sprite>sprites\spr_PlayerShoot</sprite>
+      <sprite>sprites\spr_PlayerRun</sprite>
+    </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_BasicEnemy</sprite>
+    </sprites>
+    <sprites name="UI">
+      <sprite>sprites\spr_Health</sprite>
+      <sprite>sprites\spr_Clip</sprite>
+      <sprite>sprites\spr_PowerUp</sprite>
+    </sprites>
+    <sprites name="PowerUp">
+      <sprite>sprites\spr_PwrHealth</sprite>
+      <sprite>sprites\spr_PwrShotgun</sprite>
+    </sprites>
+    <sprites name="Guns">
+      <sprites name="BasicWeapon">
+        <sprite>sprites\spr_BasicBullet</sprite>
+      </sprites>
+      <sprites name="Shotgun">
+        <sprite>sprites\spr_ShotgunBullet</sprite>
+      </sprites>
+      <sprites name="Grenade">
+        <sprite>sprites\spr_GrenadeBullet</sprite>
+      </sprites>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <help>
