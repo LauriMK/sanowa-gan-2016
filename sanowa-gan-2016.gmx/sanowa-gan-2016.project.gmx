@@ -8,6 +8,20 @@
   <sprites name="sprites"/>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <objects name="Player">
+      <object>objects\obj_Player</object>
+    </objects>
+    <objects name="Enemy">
+      <object>objects\obj_EnemyBasic</object>
+    </objects>
+    <objects name="Weapons">
+      <object>objects\obj_Bullet</object>
+    </objects>
+    <objects name="Control">
+      <object>objects\obj_EnemySpawner</object>
+    </objects>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
