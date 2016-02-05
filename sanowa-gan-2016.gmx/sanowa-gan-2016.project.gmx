@@ -36,6 +36,11 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Player">
+      <script>scripts\scr_shoot.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_Player</object>
@@ -44,7 +49,7 @@
       <object>objects\obj_EnemyBasic</object>
     </objects>
     <objects name="Weapons">
-      <object>objects\obj_Bullet</object>
+      <object>objects\obj_BasicBullet</object>
     </objects>
     <objects name="Control">
       <object>objects\obj_EnemySpawner</object>
