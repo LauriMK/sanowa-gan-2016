@@ -29,8 +29,8 @@
 
 speed = 12;
 
-direction = obj_Player.direction+30;
-image_angle = direction;
+//direction = obj_Player.direction+30;
+//image_angle = direction;
 </string>
           </argument>
         </arguments>
