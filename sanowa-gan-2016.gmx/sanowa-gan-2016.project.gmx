@@ -21,6 +21,7 @@
     <sprites name="PowerUp">
       <sprite>sprites\spr_PwrHealth</sprite>
       <sprite>sprites\spr_PwrShotgun</sprite>
+      <sprite>sprites\spr_PwrSpread</sprite>
     </sprites>
     <sprites name="Guns">
       <sprites name="BasicWeapon">
