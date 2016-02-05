@@ -123,9 +123,11 @@ else if(keyDown){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sprite handling
+            <string>/// Shooting
+if(keyShoot){
 
-image_angle = direction;
+    scr_shoot();
+}
 </string>
           </argument>
         </arguments>
@@ -146,10 +148,17 @@ image_angle = direction;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Shooting
+            <string>/// Sprite handling
+
+image_angle = direction;
+
 if(keyShoot){
 
-    scr_shoot();
+    sprite_index = spr_PlayerShoot;
+
+}
+else{
+    sprite_index = spr_PlayerRun;
 }
 </string>
           </argument>
