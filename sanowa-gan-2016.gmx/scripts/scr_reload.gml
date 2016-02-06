@@ -1,6 +1,23 @@
-if(obj_Player.currentWeapon == 1){
+
+
+
+if(obj_Player.currentWeapon == WEAPON_BASIC){
     loading = true;
     alarm[0] = room_speed * 1;
+    
+    audio_play_sound(snd_reload, 10, false);
+}
+else if(obj_Player.currentWeapon == WEAPON_SPREAD){
+    loading = true;
+    alarm[0] = room_speed * 1;
+    
+    
+    audio_play_sound(snd_reload, 10, false);
+}
+else if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
+    loading = true;
+    alarm[0] = room_speed * 0.80;
+    
     
     audio_play_sound(snd_reload, 10, false);
 }
