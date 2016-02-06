@@ -29,6 +29,8 @@
 
 // Functions
 //scr_shoot();
+//scr_reload();
+//scr_startCanShootTimer();
 
 
 // Instance variables
@@ -39,6 +41,8 @@ currentWeapon = 1;
 magazine = 91;
 loading = false;
 canShoot = true;
+
+powerUpSlot = 0;
 
 //Built-in variables
 friction = 0.5;
@@ -123,6 +127,7 @@ keyUp = keyboard_check(vk_up) || gamepad_axis_value(0, gp_axislv) &lt; -0.50 || 
 keyDown = keyboard_check(vk_down) || gamepad_axis_value(0, gp_axislv) &gt;  0.50 || gamepad_button_check(0, gp_padd); 
 keyShoot = keyboard_check(vk_control) || gamepad_button_check(0, gp_face1);
 keyReload = keyboard_check(vk_shift) || gamepad_button_check(0, gp_face2);
+keyStartPowerUp = keyboard_check(vk_space) || gamepad_button_check(0, gp_face3);
 
 if(keyLeft){
 
@@ -181,6 +186,14 @@ if(keyReload){
     
     if(loading == false){
         scr_reload();
+    }
+}
+if(keyStartPowerUp){
+    
+    if(obj_Player.powerUpSlot == 1){
+        obj_Player.powerUpSlot = 0;
+        obj_Player.currentWeapon = 2; 
+        obj_Player.magazine = 91;
     }
 }
 </string>

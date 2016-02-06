@@ -25,7 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(100,100,obj_Player.magazine);
+            <string>
+draw_sprite(spr_Bar,0,0,0);
+draw_text(0+15,0+13,obj_Player.magazine);
+
+if(obj_Player.powerUpSlot == 1){
+
+    draw_sprite(spr_PwrSpread, 0, 104, 0+4); 
+}
 </string>
           </argument>
         </arguments>
