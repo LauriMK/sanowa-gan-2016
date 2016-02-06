@@ -19,5 +19,7 @@ else if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
     alarm[0] = room_speed * 0.80;
     
     
-    audio_play_sound(snd_reload, 10, false);
+    var audio = audio_play_sound(snd_reloadShotgun, 10, false);
+    audio_sound_pitch(audio, 1 + random_range(-0.01,0.01));
+    audio_sound_gain(audio, 1 + random_range(-0.05,0), 0);
 }
