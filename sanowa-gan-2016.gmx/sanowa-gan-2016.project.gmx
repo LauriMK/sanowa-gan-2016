@@ -3,11 +3,16 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\TileSet 1 and bonus Wallset</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sounds name="Weapon">
       <sound>sound\snd_reload</sound>
       <sound>sound\snd_shoot</sound>
+    </sounds>
+    <sounds name="UI">
+      <sound>sound\snd_click</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -41,13 +46,16 @@
       </sprites>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\tileSet_Rocks</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
       <script>scripts\scr_shoot.gml</script>
       <script>scripts\scr_reload.gml</script>
       <script>scripts\scr_startCanShootTimer.gml</script>
+      <script>scripts\scr_startPowerUp.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
