@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Weapon">
+      <sound>sound\snd_reload</sound>
+      <sound>sound\snd_shoot</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_PlayerShoot</sprite>
@@ -40,6 +45,8 @@
   <scripts name="scripts">
     <scripts name="Player">
       <script>scripts\scr_shoot.gml</script>
+      <script>scripts\scr_reload.gml</script>
+      <script>scripts\scr_startCanShootTimer.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -54,6 +61,10 @@
     </objects>
     <objects name="Control">
       <object>objects\obj_EnemySpawner</object>
+      <object>objects\obj_DrawGUI</object>
+    </objects>
+    <objects name="PowerUp">
+      <object>objects\obj_PwrSpread</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -64,11 +75,11 @@
     <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
     <constant name="PLAYER_SPEED_SHOOT">5</constant>
     <constant name="PLAYER_SPEED_RUN">5</constant>
-    <constant name="BULLET_ANGLE">25</constant>
+    <constant name="BULLET_ANGLE">28</constant>
     <constant name="BULLET_OFFSET">1</constant>
     <constant name="BULLET_SPREAD">7</constant>
     <constant name="BULLET_ANGLE2">30</constant>
-    <constant name="BULLET_OFFSET2">24</constant>
+    <constant name="BULLET_OFFSET2">30</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
