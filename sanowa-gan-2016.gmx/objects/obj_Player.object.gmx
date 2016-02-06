@@ -93,8 +93,20 @@ friction = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>loading=false;
-magazine = 91;
+            <string>///RELoad
+if(obj_Player.currentWeapon == WEAPON_BASIC){
+    loading=false;
+    magazine = 91;
+}
+else if(obj_Player.currentWeapon == WEAPON_SPREAD){
+    loading=false;
+    obj_Player.currentWeapon = WEAPON_BASIC;
+    magazine = 91;
+}
+else if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
+    loading=false;
+}
+
 </string>
           </argument>
         </arguments>
@@ -185,8 +197,11 @@ if(keyShoot){
 }
 if(keyReload){
     
-    if(loading == false){
-        scr_reload();
+    if(obj_Player.currentWeapon == WEAPON_BASIC){
+    
+        if(loading == false){
+            scr_reload();
+        }
     }
 }
 if(keyStartPowerUp){
