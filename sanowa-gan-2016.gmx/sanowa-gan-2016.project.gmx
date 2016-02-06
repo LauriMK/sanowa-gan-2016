@@ -11,6 +11,7 @@
       <sound>sound\snd_reload</sound>
       <sound>sound\snd_shoot</sound>
       <sound>sound\snd_shotgun</sound>
+      <sound>sound\snd_reloadShotgun</sound>
     </sounds>
     <sounds name="UI">
       <sound>sound\snd_click</sound>

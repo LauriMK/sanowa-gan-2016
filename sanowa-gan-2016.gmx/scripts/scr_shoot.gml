@@ -92,12 +92,13 @@ else if(weapon == WEAPON_SHOTGUN){
             obj_Player.magazine--;
             if(obj_Player.magazine <= 0){
                     
-                    obj_Player.currentWeapon = 1;
+                    obj_Player.currentWeapon = WEAPON_BASIC;
                     scr_reload();
                     
                 
             }
-            scr_reload();
+            if(obj_Player.currentWeapon = WEAPON_SHOTGUN)
+                    scr_reload();
             
         
     }
