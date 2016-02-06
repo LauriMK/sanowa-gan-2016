@@ -59,14 +59,16 @@
   <rooms name="rooms">
     <room>rooms\rm_Game</room>
   </rooms>
-  <constants number="7">
+  <constants number="9">
     <constant name="PLAYER_ROTATION">3</constant>
     <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
     <constant name="PLAYER_SPEED_SHOOT">5</constant>
     <constant name="PLAYER_SPEED_RUN">5</constant>
-    <constant name="BULLET_ANGLE">15</constant>
-    <constant name="BULLET_OFFSET">24</constant>
+    <constant name="BULLET_ANGLE">25</constant>
+    <constant name="BULLET_OFFSET">1</constant>
     <constant name="BULLET_SPREAD">7</constant>
+    <constant name="BULLET_ANGLE2">30</constant>
+    <constant name="BULLET_OFFSET2">24</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
