@@ -71,6 +71,7 @@
     <objects name="Control">
       <object>objects\obj_EnemySpawner</object>
       <object>objects\obj_DrawGUI</object>
+      <object>objects\obj_AmbientSoundControl</object>
     </objects>
     <objects name="PowerUp">
       <object>objects\obj_PwrSpread</object>

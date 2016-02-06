@@ -31,6 +31,7 @@
 //scr_shoot();
 //scr_reload();
 //scr_startCanShootTimer();
+//scr_startPowerUp();
 
 
 // Instance variables
