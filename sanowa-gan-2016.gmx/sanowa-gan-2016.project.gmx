@@ -12,6 +12,8 @@
       <sound>sound\snd_shoot</sound>
       <sound>sound\snd_shotgun</sound>
       <sound>sound\snd_reloadShotgun</sound>
+      <sound>sound\snd_grenade</sound>
+      <sound>sound\snd_grenadeExplode</sound>
     </sounds>
     <sounds name="UI">
       <sound>sound\snd_click</sound>
@@ -35,6 +37,7 @@
       <sprite>sprites\spr_PwrHealth</sprite>
       <sprite>sprites\spr_PwrShotgun</sprite>
       <sprite>sprites\spr_PwrSpread</sprite>
+      <sprite>sprites\spr_PwrGrenade</sprite>
     </sprites>
     <sprites name="Guns">
       <sprites name="BasicWeapon">
@@ -44,7 +47,8 @@
         <sprite>sprites\spr_ShotgunBullet</sprite>
       </sprites>
       <sprites name="Grenade">
-        <sprite>sprites\spr_GrenadeBullet</sprite>
+        <sprite>sprites\spr_Grenade</sprite>
+        <sprite>sprites\spr_GrenadeExplode</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -59,6 +63,9 @@
       <script>scripts\scr_startCanShootTimer.gml</script>
       <script>scripts\scr_startPowerUp.gml</script>
     </scripts>
+    <scripts name="Weapon">
+      <script>scripts\scr_startGrenadeTimer.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">
@@ -69,6 +76,10 @@
     </objects>
     <objects name="Weapons">
       <object>objects\obj_BasicBullet</object>
+      <object>objects\obj_Grenade</object>
+      <objects name="FX">
+        <object>objects\obj_GrenadeExplode</object>
+      </objects>
     </objects>
     <objects name="Control">
       <object>objects\obj_EnemySpawner</object>
@@ -78,12 +89,13 @@
     <objects name="PowerUp">
       <object>objects\obj_PwrSpread</object>
       <object>objects\obj_PwrShotgun</object>
+      <object>objects\obj_PwrGrenade</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Game</room>
   </rooms>
-  <constants number="14">
+  <constants number="16">
     <constant name="PLAYER_ROTATION">3</constant>
     <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
     <constant name="PLAYER_SPEED_SHOOT">5</constant>
@@ -96,8 +108,10 @@
     <constant name="WEAPON_BASIC">1</constant>
     <constant name="WEAPON_SPREAD">2</constant>
     <constant name="WEAPON_SHOTGUN">3</constant>
+    <constant name="WEAPON_GRENADE">4</constant>
     <constant name="POWERUP_SLOT_SPREAD">1</constant>
     <constant name="POWERUP_SLOT_SHOTGUN">2</constant>
+    <constant name="POWERUP_SLOT_GRENADE">3</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
