@@ -29,9 +29,13 @@
 draw_sprite(spr_Bar,0,0,0);
 draw_text(0+15,0+13,obj_Player.magazine);
 
-if(obj_Player.powerUpSlot == 1){
+if(obj_Player.powerUpSlot == POWERUP_SLOT_SPREAD){
 
     draw_sprite(spr_PwrSpread, 0, 104, 0+4); 
+}
+else if(obj_Player.powerUpSlot == POWERUP_SLOT_SHOTGUN){
+
+    draw_sprite(spr_PwrShotgun, 0, 104, 0+4); 
 }
 </string>
           </argument>

@@ -10,6 +10,8 @@
     <sounds name="Weapon">
       <sound>sound\snd_reload</sound>
       <sound>sound\snd_shoot</sound>
+      <sound>sound\snd_shotgun</sound>
+      <sound>sound\snd_reloadShotgun</sound>
     </sounds>
     <sounds name="UI">
       <sound>sound\snd_click</sound>
@@ -75,12 +77,13 @@
     </objects>
     <objects name="PowerUp">
       <object>objects\obj_PwrSpread</object>
+      <object>objects\obj_PwrShotgun</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Game</room>
   </rooms>
-  <constants number="9">
+  <constants number="14">
     <constant name="PLAYER_ROTATION">3</constant>
     <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
     <constant name="PLAYER_SPEED_SHOOT">5</constant>
@@ -90,6 +93,11 @@
     <constant name="BULLET_SPREAD">5</constant>
     <constant name="BULLET_ANGLE2">30</constant>
     <constant name="BULLET_OFFSET2">30</constant>
+    <constant name="WEAPON_BASIC">1</constant>
+    <constant name="WEAPON_SPREAD">2</constant>
+    <constant name="WEAPON_SHOTGUN">3</constant>
+    <constant name="POWERUP_SLOT_SPREAD">1</constant>
+    <constant name="POWERUP_SLOT_SHOTGUN">2</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

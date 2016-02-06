@@ -93,8 +93,20 @@ friction = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>loading=false;
-magazine = 91;
+            <string>///RELoad
+if(obj_Player.currentWeapon == WEAPON_BASIC){
+    loading=false;
+    magazine = 91;
+}
+else if(obj_Player.currentWeapon == WEAPON_SPREAD){
+    loading=false;
+    obj_Player.currentWeapon = WEAPON_BASIC;
+    magazine = 91;
+}
+else if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
+    loading=false;
+}
+
 </string>
           </argument>
         </arguments>
@@ -185,8 +197,11 @@ if(keyShoot){
 }
 if(keyReload){
     
-    if(loading == false){
-        scr_reload();
+    if(obj_Player.currentWeapon == WEAPON_BASIC){
+    
+        if(loading == false){
+            scr_reload();
+        }
     }
 }
 if(keyStartPowerUp){
@@ -249,7 +264,16 @@ else{
           <argument>
             <kind>1</kind>
             <string>/// DEBUG
-currentWeapon = 2;
+if(obj_Player.powerUpSlot == 0){
+
+    other.powerUpSlot = POWERUP_SLOT_SHOTGUN;
+    
+    audio_play_sound(snd_click,14,false);
+    //instance_create(x+random_range(5,45), y+random_range(5,45), obj_PwrSpread);
+    //instance_destroy();
+}
+
+
 </string>
           </argument>
         </arguments>
@@ -273,7 +297,16 @@ currentWeapon = 2;
           <argument>
             <kind>1</kind>
             <string>/// DEBUG
-currentWeapon = 1;
+
+if(obj_Player.powerUpSlot == 0){
+
+    other.powerUpSlot = POWERUP_SLOT_SPREAD;
+    
+    audio_play_sound(snd_click,14,false);
+    //instance_create(x+random_range(5,45), y+random_range(5,45), obj_PwrSpread);
+    //instance_destroy();
+}
+
 </string>
           </argument>
         </arguments>
