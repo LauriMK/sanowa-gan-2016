@@ -49,6 +49,15 @@
           <argument>
             <kind>1</kind>
             <string>/// Collision with player
+
+if(obj_Player.powerUpSlot == 0){
+
+    other.powerUpSlot = 1;
+    
+    
+    instance_create(x+random_range(5,45), y+random_range(5,45), obj_PwrSpread);
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

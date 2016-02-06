@@ -22,6 +22,7 @@
       <sprite>sprites\spr_Health</sprite>
       <sprite>sprites\spr_Clip</sprite>
       <sprite>sprites\spr_PowerUp</sprite>
+      <sprite>sprites\spr_Bar</sprite>
     </sprites>
     <sprites name="PowerUp">
       <sprite>sprites\spr_PwrHealth</sprite>
@@ -75,9 +76,9 @@
     <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
     <constant name="PLAYER_SPEED_SHOOT">5</constant>
     <constant name="PLAYER_SPEED_RUN">5</constant>
-    <constant name="BULLET_ANGLE">28</constant>
-    <constant name="BULLET_OFFSET">1</constant>
-    <constant name="BULLET_SPREAD">7</constant>
+    <constant name="BULLET_ANGLE">31</constant>
+    <constant name="BULLET_OFFSET">0.1</constant>
+    <constant name="BULLET_SPREAD">5</constant>
     <constant name="BULLET_ANGLE2">30</constant>
     <constant name="BULLET_OFFSET2">30</constant>
   </constants>
