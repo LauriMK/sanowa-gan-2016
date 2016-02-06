@@ -106,3 +106,37 @@ else if(weapon == WEAPON_SHOTGUN){
 
     
 }
+else if(weapon == WEAPON_GRENADE){
+    
+    
+    
+        if(loading == false){
+            cx = x + lengthdir_x(BULLET_OFFSET2, image_angle+BULLET_ANGLE2);
+            cy = y + lengthdir_y(BULLET_OFFSET2, image_angle+BULLET_ANGLE2);
+            var bullet1 = instance_create(cx + lengthdir_x(BULLET_OFFSET, image_angle+BULLET_ANGLE), cy + lengthdir_y(BULLET_OFFSET, image_angle+BULLET_ANGLE), obj_Grenade); 
+            bullet1.direction = obj_Player.direction+BULLET_ANGLE; 
+            bullet1.image_angle = obj_Player.direction+BULLET_ANGLE;
+            
+            
+            var sound = audio_play_sound(snd_grenade, 10, false);
+            audio_sound_pitch(sound, 1 + ( random_range(-0.01,0.01) ) );
+            
+            
+            
+            obj_Player.magazine--;
+            if(obj_Player.magazine <= 0){
+                    
+                    obj_Player.currentWeapon = WEAPON_BASIC;
+                    scr_reload();
+                    
+                
+            }
+            if(obj_Player.currentWeapon = WEAPON_GRENADE)
+                    scr_reload();
+            
+        
+    }
+    
+
+    
+}
