@@ -25,9 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Init
+            <string>/// Init
 
+//Functions
+//
+
+//Instance variables
 hitPoints=100;
+//Built-in variables
+
 </string>
           </argument>
         </arguments>

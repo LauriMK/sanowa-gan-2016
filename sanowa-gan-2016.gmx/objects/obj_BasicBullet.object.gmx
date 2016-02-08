@@ -27,10 +27,15 @@
             <kind>1</kind>
             <string>/// Init
 
+//Functions
+//
+
+//Instance variables
+
+//Built-in variables
 speed = 15;
 
-//direction = obj_Player.direction+30;
-//image_angle = direction;
+
 </string>
           </argument>
         </arguments>
