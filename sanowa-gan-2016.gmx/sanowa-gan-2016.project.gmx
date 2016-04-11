@@ -107,12 +107,12 @@
     <room>rooms\rm_Game</room>
   </rooms>
   <constants number="16">
-    <constant name="PLAYER_ROTATION">3</constant>
+    <constant name="PLAYER_ROTATION">5</constant>
     <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
-    <constant name="PLAYER_SPEED_SHOOT">5</constant>
-    <constant name="PLAYER_SPEED_RUN">5</constant>
-    <constant name="BULLET_ANGLE">31</constant>
-    <constant name="BULLET_OFFSET">0.1</constant>
+    <constant name="PLAYER_SPEED_SHOOT">4.5</constant>
+    <constant name="PLAYER_SPEED_RUN">7</constant>
+    <constant name="BULLET_ANGLE">35</constant>
+    <constant name="BULLET_OFFSET">22</constant>
     <constant name="BULLET_SPREAD">5</constant>
     <constant name="BULLET_ANGLE2">30</constant>
     <constant name="BULLET_OFFSET2">30</constant>
