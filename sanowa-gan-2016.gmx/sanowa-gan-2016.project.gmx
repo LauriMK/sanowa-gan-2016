@@ -33,6 +33,7 @@
       <sprite>sprites\spr_Clip</sprite>
       <sprite>sprites\spr_PowerUp</sprite>
       <sprite>sprites\spr_Bar</sprite>
+      <sprite>sprites\spr_CurrentBgr</sprite>
     </sprites>
     <sprites name="PowerUp">
       <sprite>sprites\spr_PwrHealth</sprite>
@@ -108,7 +109,7 @@
   </rooms>
   <constants number="16">
     <constant name="PLAYER_ROTATION">5</constant>
-    <constant name="PLAYER_SPEED_BACKWARDS">3</constant>
+    <constant name="PLAYER_SPEED_BACKWARDS">3.5</constant>
     <constant name="PLAYER_SPEED_SHOOT">4.5</constant>
     <constant name="PLAYER_SPEED_RUN">7</constant>
     <constant name="BULLET_ANGLE">35</constant>
