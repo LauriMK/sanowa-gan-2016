@@ -65,7 +65,7 @@ if(obj_Player.powerUpSlot == POWERUP_SLOT_SPREAD){
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_SHOTGUN){
 
-    draw_sprite(spr_PwrShotgun, 0, 104, 0+4); 
+    draw_sprite(spr_PwrShotgun2, 0, 104, 0+4); 
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_GRENADE){
 

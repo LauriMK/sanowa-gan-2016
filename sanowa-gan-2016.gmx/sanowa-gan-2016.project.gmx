@@ -39,6 +39,7 @@
       <sprite>sprites\spr_PwrShotgun</sprite>
       <sprite>sprites\spr_PwrSpread</sprite>
       <sprite>sprites\spr_PwrGrenade</sprite>
+      <sprite>sprites\spr_PwrShotgun2</sprite>
     </sprites>
     <sprites name="Guns">
       <sprites name="BasicWeapon">
@@ -54,6 +55,7 @@
     </sprites>
     <sprites name="mine_tileset">
       <sprite>sprites\spr_Box16</sprite>
+      <sprite>sprites\spr_Wall</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -98,6 +100,7 @@
     </objects>
     <objects name="mine_tileset">
       <object>objects\obj_Box16</object>
+      <object>objects\obj_Wall</object>
     </objects>
   </objects>
   <rooms name="rooms">
