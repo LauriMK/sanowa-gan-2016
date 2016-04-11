@@ -55,21 +55,44 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-draw_sprite(spr_Bar,0,0,0);
-draw_text(0+15,0+13,obj_Player.magazine);
+            <string>///piirretään healthbar
+
+draw_sprite(spr_Health,0,5,5);
+draw_text(0+10,0+40,obj_Player.magazine);
+
+
+///Mikä poweruppi on otettu taskuun
 
 if(obj_Player.powerUpSlot == POWERUP_SLOT_SPREAD){
 
-    draw_sprite(spr_PwrSpread, 0, 104, 0+4); 
+    draw_sprite(spr_PwrSpread, 0, 250, 0+4); 
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_SHOTGUN){
 
-    draw_sprite(spr_PwrShotgun2, 0, 104, 0+4); 
+    draw_sprite(spr_PwrShotgun2, 0, 250, 0+4); 
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_GRENADE){
 
-    draw_sprite(spr_PwrGrenade, 0, 104, 0+4); 
+    draw_sprite(spr_PwrGrenade, 0, 250, 0+4); 
+}
+
+///Mikä poweruppi on käytössä
+
+if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
+
+    draw_sprite(spr_CurrentBgr, 0, 196, 0);
+    draw_sprite(spr_PwrShotgun2, 0, 200, 0+4); 
+    
+}
+else if(obj_Player.currentWeapon == WEAPON_GRENADE){
+
+    draw_sprite(spr_CurrentBgr, 0, 196, 0);
+    draw_sprite(spr_PwrGrenade, 0, 200, 0+4); 
+}
+else if(obj_Player.currentWeapon == WEAPON_SPREAD){
+
+    draw_sprite(spr_CurrentBgr, 0, 196, 0);
+    draw_sprite(spr_PwrSpread, 0, 200, 0+4); 
 }
 </string>
           </argument>
