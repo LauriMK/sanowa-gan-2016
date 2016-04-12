@@ -3,10 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions>
-    <extension index="0">extensions\TileSet 1 and bonus Wallset</extension>
-    <extension index="1">extensions\Mine Tileset</extension>
-  </NewExtensions>
+  <NewExtensions/>
   <sounds name="sound">
     <sounds name="Weapon">
       <sound>sound\snd_reload</sound>
@@ -54,14 +51,8 @@
         <sprite>sprites\spr_GrenadeExplode</sprite>
       </sprites>
     </sprites>
-    <sprites name="mine_tileset">
-      <sprite>sprites\spr_Box16</sprite>
-      <sprite>sprites\spr_Wall</sprite>
-    </sprites>
   </sprites>
-  <backgrounds name="background">
-    <background>background\tileSet_Rocks</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
@@ -99,15 +90,11 @@
       <object>objects\obj_PwrShotgun</object>
       <object>objects\obj_PwrGrenade</object>
     </objects>
-    <objects name="mine_tileset">
-      <object>objects\obj_Box16</object>
-      <object>objects\obj_Wall</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Game</room>
   </rooms>
-  <constants number="16">
+  <constants number="18">
     <constant name="PLAYER_ROTATION">5</constant>
     <constant name="PLAYER_SPEED_BACKWARDS">3.5</constant>
     <constant name="PLAYER_SPEED_SHOOT">4.5</constant>
@@ -124,6 +111,8 @@
     <constant name="POWERUP_SLOT_SPREAD">1</constant>
     <constant name="POWERUP_SLOT_SHOTGUN">2</constant>
     <constant name="POWERUP_SLOT_GRENADE">3</constant>
+    <constant name="ENEMY_SPEED_DEFAULT">1.2</constant>
+    <constant name="ENEMY_SPEED_NEAR_PLAYER">0.1</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
