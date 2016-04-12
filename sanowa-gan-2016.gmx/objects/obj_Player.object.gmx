@@ -37,6 +37,7 @@
 // Instance variables
 playerHitPoints = 100;
 playerHitPointsMax = 100;
+scorePoints = 0;
 
 currentWeapon = 1;
 magazine = 91;
@@ -116,69 +117,6 @@ else if(obj_Player.currentWeapon == WEAPON_GRENADE){
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(collision_circle(x + lengthdir_x(6, direction) + hspeed, y + lengthdir_y(6, direction) - vspeed, 16, obj_Wall, 1, 1)) { // Horizontal collision
-    hspeed = 0; // Stop horizontal movement
-}
-if(collision_circle(x + lengthdir_x(6, direction) - hspeed, y + lengthdir_y(6, direction) + vspeed, 16, obj_Wall, 1, 1)) { // Vertical collision
-    vspeed = 0; // Stop vertical movement
-}
-/*if(hspeed != 0){
-    if(!place_free(x+hspeed, y)){
-        
-        if(hspeed &gt; 0){
-            move_contact_solid(0,hspeed);
-            
-        
-        }
-        if(hspeed &lt; 0){
-            move_contact_solid(180,-hspeed);
-        
-        }
-        hspeed = 0;
-    
-    }
-
-
-}
-if(vspeed != 0){
-    if(!place_free(x+hspeed, y+vspeed)){
-        
-        if(vspeed &gt; 0){
-            move_contact_solid(270,vspeed);
-            
-        
-        }
-        if(vspeed &lt; 0){
-            move_contact_solid(90,-vspeed);
-        
-        }
-        vspeed = 0;
-    
-    }
-
-}*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -238,47 +176,7 @@ else if(keyDown){
 }
 
 
-/*
 
-
-
-
-if(hspeed != 0){
-    if(!place_free(x+hspeed, y)){
-        
-        if(hspeed &gt; 0){
-            move_contact_solid(0,hspeed);
-            
-        
-        }
-        if(hspeed &lt; 0){
-            move_contact_solid(180,-hspeed);
-        
-        }
-        speed = 0;
-    
-    }
-
-
-}
-if(vspeed != 0){
-    if(!place_free(x+hspeed, y+vspeed)){
-        
-        if(vspeed &gt; 0){
-            move_contact_solid(270,vspeed);
-            
-        
-        }
-        if(vspeed &lt; 0){
-            move_contact_solid(90,-vspeed);
-        
-        }
-        speed = 0;
-    
-    }
-
-
-}*/
 </string>
           </argument>
         </arguments>
@@ -350,30 +248,6 @@ if(keyShoot){
 else{
     sprite_index = spr_PlayerRun;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_Wall">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//x += 0.1 * (x - (other.x));
-//y += 0.1 * (y - (other.y));
 </string>
           </argument>
         </arguments>
