@@ -55,45 +55,67 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///piirretään healthbar
+            <string>///piirretään pysyvät UI osat 
 
+    ///healthbarin osat
+draw_healthbar(11, 10, 180, 30, obj_Player.playerHitPoints, c_gray, c_red, c_red, 0, false, false)
 draw_sprite(spr_Health,0,5,5);
-draw_text(0+10,0+40,obj_Player.magazine);
+
+    //powerupin nuoli &amp; seuraavan laatikko
+draw_sprite(spr_PowerUpArrow,0,256,5);
+draw_sprite(spr_NextBgr, 0, 270, 4);
+
+    //tekstit, healtti ja ammusten määrä
+draw_text(0+330,0+10,obj_Player.magazine);
+draw_text(80, 12, obj_Player.playerHitPoints);
 
 
 ///Mikä poweruppi on otettu taskuun
 
 if(obj_Player.powerUpSlot == POWERUP_SLOT_SPREAD){
 
-    draw_sprite(spr_PwrSpread, 0, 250, 0+4); 
+    draw_sprite(spr_PwrSpread, 0, 270, 0+4); 
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_SHOTGUN){
 
-    draw_sprite(spr_PwrShotgun2, 0, 250, 0+4); 
+    draw_sprite(spr_PwrShotgun2, 0, 270, 0+4); 
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_GRENADE){
 
-    draw_sprite(spr_PwrGrenade, 0, 250, 0+4); 
+    draw_sprite(spr_PwrGrenade, 0, 270, 0+4); 
 }
 
 ///Mikä poweruppi on käytössä
 
 if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
-
-    draw_sprite(spr_CurrentBgr, 0, 196, 0);
-    draw_sprite(spr_PwrShotgun2, 0, 200, 0+4); 
     
+    draw_sprite(spr_PwrShotgun2, 0, 200, 0+4);
+           
 }
 else if(obj_Player.currentWeapon == WEAPON_GRENADE){
 
-    draw_sprite(spr_CurrentBgr, 0, 196, 0);
-    draw_sprite(spr_PwrGrenade, 0, 200, 0+4); 
+    draw_sprite(spr_PwrGrenade, 0, 200, 0+4);
+        
 }
 else if(obj_Player.currentWeapon == WEAPON_SPREAD){
 
-    draw_sprite(spr_CurrentBgr, 0, 196, 0);
-    draw_sprite(spr_PwrSpread, 0, 200, 0+4); 
+    draw_sprite(spr_PwrSpread, 0, 200, 0+4);
+         
 }
+
+
+// Piirretään lipas spriteinä
+
+for ( i = 0; i &lt; obj_Player.magazine; i++){
+    
+    slot = i * sprite_get_width(spr_Clip);
+    draw_sprite(spr_Clip, 0, 330 + slot , 30);
+}
+
+
+//Piirretään  käytössä olevan powerupin laatikko
+//tää pitää olla viimesenä että toimii oikein eli piirtyy powerupin päälle
+draw_sprite(spr_CurrentBgr, 0, 196, 0);
 </string>
           </argument>
         </arguments>

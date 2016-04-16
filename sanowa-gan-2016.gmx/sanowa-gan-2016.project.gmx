@@ -28,8 +28,8 @@
     <sprites name="UI">
       <sprite>sprites\spr_Health</sprite>
       <sprite>sprites\spr_Clip</sprite>
-      <sprite>sprites\spr_PowerUp</sprite>
-      <sprite>sprites\spr_Bar</sprite>
+      <sprite>sprites\spr_PowerUpArrow</sprite>
+      <sprite>sprites\spr_NextBgr</sprite>
       <sprite>sprites\spr_CurrentBgr</sprite>
     </sprites>
     <sprites name="PowerUp">
