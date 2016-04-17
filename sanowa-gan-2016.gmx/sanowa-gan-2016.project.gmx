@@ -52,7 +52,17 @@
       </sprites>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Ground">
+      <background>background\bck_Grass</background>
+      <background>background\bck_GrassStone</background>
+      <background>background\bck_GrassStone2</background>
+      <background>background\bck_GrassStone3</background>
+    </backgrounds>
+    <backgrounds name="Tents">
+      <background>background\bck_SideTent</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Player">
