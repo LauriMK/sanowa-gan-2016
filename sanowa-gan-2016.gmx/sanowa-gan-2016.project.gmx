@@ -31,6 +31,8 @@
       <sprite>sprites\spr_PowerUpArrow</sprite>
       <sprite>sprites\spr_NextBgr</sprite>
       <sprite>sprites\spr_CurrentBgr</sprite>
+      <sprite>sprites\spr_ClipShtgn</sprite>
+      <sprite>sprites\spr_ClipGrnd</sprite>
     </sprites>
     <sprites name="PowerUp">
       <sprite>sprites\spr_PwrHealth</sprite>

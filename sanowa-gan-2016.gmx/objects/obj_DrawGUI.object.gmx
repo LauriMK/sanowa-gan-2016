@@ -109,6 +109,8 @@ else if(obj_Player.currentWeapon == WEAPON_SPREAD){
 var numCols = 23;
 var numRows = obj_Player.magazine / numCols;
 var bulletsDrawn = 0;
+var xOff = 0;
+var yOff = 0;
 
 for ( var i = 0; i &lt; numRows; i++){
     
@@ -116,9 +118,25 @@ for ( var i = 0; i &lt; numRows; i++){
         
         if(bulletsDrawn == obj_Player.magazine)
             break;
-        var xOff = j * sprite_get_width(spr_Clip);
-        var yOff = i * sprite_get_height(spr_Clip);
-        draw_sprite(spr_Clip, 0, 20 + xOff , 55 + yOff);
+            
+            //tähän väliin if kysely eri spriteille
+            if(obj_Player.currentWeapon == WEAPON_BASIC || obj_Player.currentWeapon == WEAPON_SPREAD){
+                xOff = j * sprite_get_width(spr_Clip);
+                yOff = i * sprite_get_height(spr_Clip);
+                draw_sprite(spr_Clip, 0, 20 + xOff , 55 + yOff);
+            }
+            else if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
+                xOff = j * sprite_get_width(spr_ClipShtgn);
+                yOff = i * sprite_get_height(spr_ClipShtgn);
+                draw_sprite(spr_ClipShtgn, 0, 20 + xOff , 55 + yOff);
+            }
+            else if(obj_Player.currentWeapon == WEAPON_GRENADE){
+                xOff = j * sprite_get_width(spr_ClipGrnd);
+                yOff = i * sprite_get_height(spr_ClipGrnd);
+                draw_sprite(spr_ClipGrnd, 0, 20 + xOff , 55 + yOff);
+            }
+            //tähän loppuu kysely
+            
         bulletsDrawn++;
         
     }
