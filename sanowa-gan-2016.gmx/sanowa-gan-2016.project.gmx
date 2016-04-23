@@ -36,7 +36,7 @@
     </sprites>
     <sprites name="PowerUp">
       <sprite>sprites\spr_PwrHealth</sprite>
-      <sprite>sprites\spr_PwrShotgun</sprite>
+      <sprite>sprites\spr_PwrSpawnFlash</sprite>
       <sprite>sprites\spr_PwrSpread</sprite>
       <sprite>sprites\spr_PwrGrenade</sprite>
       <sprite>sprites\spr_PwrShotgun2</sprite>
@@ -101,12 +101,14 @@
       <object>objects\obj_PwrSpread</object>
       <object>objects\obj_PwrShotgun</object>
       <object>objects\obj_PwrGrenade</object>
+      <object>objects\obj_PwrHealth</object>
+      <object>objects\obj_PwrSpawnFlash</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Game</room>
   </rooms>
-  <constants number="18">
+  <constants number="19">
     <constant name="PLAYER_ROTATION">5</constant>
     <constant name="PLAYER_SPEED_BACKWARDS">3.5</constant>
     <constant name="PLAYER_SPEED_SHOOT">4.5</constant>
@@ -125,6 +127,7 @@
     <constant name="POWERUP_SLOT_GRENADE">3</constant>
     <constant name="ENEMY_SPEED_DEFAULT">1.2</constant>
     <constant name="ENEMY_SPEED_NEAR_PLAYER">0.1</constant>
+    <constant name="POWERUP_HEALTHPACK">30</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
