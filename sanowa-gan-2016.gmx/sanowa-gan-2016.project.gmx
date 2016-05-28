@@ -115,9 +115,9 @@
   </rooms>
   <constants number="19">
     <constant name="PLAYER_ROTATION">5</constant>
-    <constant name="PLAYER_SPEED_BACKWARDS">3.5</constant>
-    <constant name="PLAYER_SPEED_SHOOT">4.5</constant>
-    <constant name="PLAYER_SPEED_RUN">7</constant>
+    <constant name="PLAYER_SPEED_BACKWARDS">2.5</constant>
+    <constant name="PLAYER_SPEED_SHOOT">2.5</constant>
+    <constant name="PLAYER_SPEED_RUN">5</constant>
     <constant name="BULLET_ANGLE">35</constant>
     <constant name="BULLET_OFFSET">22</constant>
     <constant name="BULLET_SPREAD">5</constant>
