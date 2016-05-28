@@ -29,9 +29,13 @@
 
 ambient_light = 0.08;
 
-light_surface = surface_create(room_width, room_height);
+light_surface = surface_create(view_wview, view_hview);
+
+surface_resize(application_surface, room_width, room_height); 
 
 application_surface_draw_enable(false);
+
+surface_resize(application_surface, room_width, room_height); 
 
 uniform_ambient = shader_get_uniform(shd_Multiply, "u_fambient");
 sampler_light = shader_get_sampler_index(shd_Multiply, "u_slight");
@@ -60,7 +64,7 @@ sampler_light = shader_get_sampler_index(shd_Multiply, "u_slight");
           <argument>
             <kind>1</kind>
             <string>///Draw GUI
-
+display_set_gui_size(room_width, room_height);
 shader_set(shd_Multiply);
 
 shader_set_uniform_f(uniform_ambient, ambient_light);
@@ -107,6 +111,7 @@ with(obj_light)
 draw_set_blend_mode(bm_normal);
 
 surface_reset_target();
+
 
 </string>
           </argument>
