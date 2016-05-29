@@ -58,55 +58,55 @@
             <string>//piirretään pysyvät UI osat 
 
     //healthbarin osat
-draw_healthbar(11, 10, 180, 30, obj_Player.playerHitPoints, c_gray, c_red, c_red, 0, false, false)
+draw_healthbar(11, 10, 240, 40, obj_Player.playerHitPoints, c_gray, c_red, c_red, 0, false, false)
 draw_sprite(spr_Health,0,5,5);
 
     //powerupin nuoli &amp; seuraavan laatikko
-draw_sprite(spr_PowerUpArrow,0,256,5);
-draw_sprite(spr_NextBgr, 0, 270, 4);
+draw_sprite(spr_PowerUpArrow,0,340,10);
+draw_sprite(spr_NextBgr, 0, 360, 4);
 
     //tekstit, healtti ja ammusten määrä
-draw_text(0+20,0+38,obj_Player.magazine);
-draw_text(80, 12, obj_Player.playerHitPoints);
+draw_text(0+20,47,obj_Player.magazine);
+draw_text(100, 17, obj_Player.playerHitPoints);
 
 
 //Mikä poweruppi on otettu taskuun
 
 if(obj_Player.powerUpSlot == POWERUP_SLOT_SPREAD){
 
-    draw_sprite(spr_PwrSpread, 0, 270, 0+4); 
+    draw_sprite(spr_PwrSpread, 0, 364, 0+8); 
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_SHOTGUN){
 
-    draw_sprite(spr_PwrShotgun2, 0, 270, 0+4); 
+    draw_sprite(spr_PwrShotgun2, 0, 364, 0+8); 
 }
 else if(obj_Player.powerUpSlot == POWERUP_SLOT_GRENADE){
 
-    draw_sprite(spr_PwrGrenade, 0, 270, 0+4); 
+    draw_sprite(spr_PwrGrenade, 0, 364, 0+8); 
 }
 
 //Mikä poweruppi on käytössä
 
 if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
     
-    draw_sprite(spr_PwrShotgun2, 0, 200, 0+4);
+    draw_sprite(spr_PwrShotgun2, 0, 264, 0+8);
            
 }
 else if(obj_Player.currentWeapon == WEAPON_GRENADE){
 
-    draw_sprite(spr_PwrGrenade, 0, 200, 0+4);
+    draw_sprite(spr_PwrGrenade, 0, 264, 0+8);
         
 }
 else if(obj_Player.currentWeapon == WEAPON_SPREAD){
 
-    draw_sprite(spr_PwrSpread, 0, 200, 0+4);
+    draw_sprite(spr_PwrSpread, 0, 264, 0+8);
          
 }
 
 
 //Piirretään lipas spriteinä
 
-var numCols = 23;
+var numCols = 21;
 var numRows = obj_Player.magazine / numCols;
 var bulletsDrawn = 0;
 var xOff = 0;
@@ -123,17 +123,17 @@ for ( var i = 0; i &lt; numRows; i++){
             if(obj_Player.currentWeapon == WEAPON_BASIC || obj_Player.currentWeapon == WEAPON_SPREAD){
                 xOff = j * sprite_get_width(spr_Clip);
                 yOff = i * sprite_get_height(spr_Clip);
-                draw_sprite(spr_Clip, 0, 20 + xOff , 55 + yOff);
+                draw_sprite(spr_Clip, 0, 20 + xOff , 65 + yOff);
             }
             else if(obj_Player.currentWeapon == WEAPON_SHOTGUN){
                 xOff = j * sprite_get_width(spr_ClipShtgn);
                 yOff = i * sprite_get_height(spr_ClipShtgn);
-                draw_sprite(spr_ClipShtgn, 0, 20 + xOff , 55 + yOff);
+                draw_sprite(spr_ClipShtgn, 0, 20 + xOff , 65 + yOff);
             }
             else if(obj_Player.currentWeapon == WEAPON_GRENADE){
                 xOff = j * sprite_get_width(spr_ClipGrnd);
                 yOff = i * sprite_get_height(spr_ClipGrnd);
-                draw_sprite(spr_ClipGrnd, 0, 20 + xOff , 55 + yOff);
+                draw_sprite(spr_ClipGrnd, 0, 20 + xOff , 65 + yOff);
             }
             //tähän loppuu kysely
             
@@ -147,7 +147,7 @@ for ( var i = 0; i &lt; numRows; i++){
 //Piirretään  käytössä olevan powerupin laatikko
 //tää pitää olla viimesenä että toimii oikein eli piirtyy powerupin päälle
 
-draw_sprite(spr_CurrentBgr, 0, 196, 0);
+draw_sprite(spr_CurrentBgr, 0, 260, 5);
 
 
 

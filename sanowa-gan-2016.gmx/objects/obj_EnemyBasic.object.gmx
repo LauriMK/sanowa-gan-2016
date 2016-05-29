@@ -37,7 +37,7 @@ hitPoints = 100;
 //Built-in variables
 
 speed = ENEMY_SPEED_DEFAULT;
-image_speed = 0.55;
+image_speed = 0.35;
 
  
 
