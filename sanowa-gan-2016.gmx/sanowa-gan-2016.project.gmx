@@ -47,7 +47,7 @@
         <sprite>sprites\spr_BasicBullet</sprite>
       </sprites>
       <sprites name="Shotgun">
-        <sprite>sprites\spr_ShotgunBullet</sprite>
+        <sprite>sprites\spr_ShotgunShell</sprite>
       </sprites>
       <sprites name="Grenade">
         <sprite>sprites\spr_Grenade</sprite>
@@ -102,6 +102,7 @@
         <object>objects\obj_GrenadeExplode</object>
       </objects>
       <object>objects\obj_ParWeapon</object>
+      <object>objects\obj_ShotgunShell</object>
     </objects>
     <objects name="Control">
       <object>objects\obj_EnemySpawner</object>
@@ -126,8 +127,8 @@
   <constants number="19">
     <constant name="PLAYER_ROTATION">5</constant>
     <constant name="PLAYER_SPEED_BACKWARDS">2.5</constant>
-    <constant name="PLAYER_SPEED_SHOOT">2.5</constant>
-    <constant name="PLAYER_SPEED_RUN">5</constant>
+    <constant name="PLAYER_SPEED_SHOOT">4</constant>
+    <constant name="PLAYER_SPEED_RUN">6</constant>
     <constant name="BULLET_ANGLE">35</constant>
     <constant name="BULLET_OFFSET">22</constant>
     <constant name="BULLET_SPREAD">5</constant>
