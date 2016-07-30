@@ -25,6 +25,7 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_BasicEnemy</sprite>
+      <sprite>sprites\spr_EnemyHB</sprite>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\spr_Health</sprite>

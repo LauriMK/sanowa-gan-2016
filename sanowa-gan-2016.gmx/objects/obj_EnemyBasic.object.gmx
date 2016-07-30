@@ -186,24 +186,35 @@ if(!self.backwards){
             <string>/// Collision with shells
 
 
-self.hitPoints -= 25; 
+if(other.enemyID != self.id){
 
-self.backwards = true;
-speed = -1.5; 
-alarm[0]= room_speed * 0.15;  
-
-
-var dir = point_direction(x,y,other.x,other.y);
-effect_create_above(ef_flare, x+lengthdir_x(10,dir), y+lengthdir_y(10,dir), 0, c_orange); 
-
-if(self.hitPoints &lt; -50){
-
-    with(other){
-        
-        instance_destroy();
+    if(distance_to_point(obj_Player.x,obj_Player.y) &gt;= 300){ 
     
+        self.hitPoints -= 15;         
     }
+    else if(distance_to_point(obj_Player.x,obj_Player.y) &gt; 100 &amp;&amp; distance_to_point(obj_Player.x,obj_Player.y) &lt; 300){
+    
+        self.hitPoints -= 50;
+    }
+    else{
+    
+        self.hitPoints -= 100;
+    }
+  
+    other.hitPoints -= 25;
+    
+    self.backwards = true;
+    speed = -1.5; 
+    alarm[0]= room_speed * 0.15;  
+    
+    
+    var dir = point_direction(x,y,other.x,other.y);
+    effect_create_above(ef_flare, x+lengthdir_x(10,dir), y+lengthdir_y(10,dir), 0, c_orange); 
+    
+    
 }
+
+other.enemyID = self.id;
 </string>
           </argument>
         </arguments>
@@ -340,6 +351,29 @@ with(other){
     }
 
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="73">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_sprite_ext(spr_EnemyHB, 0, x, y-30, hitPoints/100, 1, 0, c_white, (hitPoints/100)+25);
 </string>
           </argument>
         </arguments>
