@@ -185,27 +185,27 @@ if(!self.backwards){
             <kind>1</kind>
             <string>/// Collision with shells
 
-
 if(other.enemyID != self.id){
 
-    if(distance_to_point(obj_Player.x,obj_Player.y) &gt;= 300){ 
+  if(distance_to_point(obj_Player.x,obj_Player.y) &gt;= 500){ 
     
         self.hitPoints -= 15;         
     }
-    else if(distance_to_point(obj_Player.x,obj_Player.y) &gt; 100 &amp;&amp; distance_to_point(obj_Player.x,obj_Player.y) &lt; 300){
     
-        self.hitPoints -= 50;
-    }
     else{
     
-        self.hitPoints -= 100;
+        self.hitPoints -= 25;
     }
-  
-    other.hitPoints -= 25;
     
+    
+    //tuhoutuuko bullet vai jatkaako matkaa
+    var randomNumber = irandom_range(99, 100);
+    other.hitPoints -= randomNumber;
+    
+    //knockback
     self.backwards = true;
     speed = -1.5; 
-    alarm[0]= room_speed * 0.15;  
+    alarm[0]= room_speed * 0.1;  
     
     
     var dir = point_direction(x,y,other.x,other.y);
@@ -243,8 +243,8 @@ other.enemyID = self.id;
 self.hitPoints -= 10; 
 
 self.backwards = true;
-speed = -1.5; 
-alarm[0]= room_speed * 0.15;  
+speed = -5; 
+alarm[0]= room_speed * 0.08;  
 
 
 var dir = point_direction(x,y,other.x,other.y);
