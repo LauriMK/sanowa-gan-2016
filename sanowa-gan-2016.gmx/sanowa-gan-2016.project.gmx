@@ -25,6 +25,7 @@
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_BasicEnemy</sprite>
+      <sprite>sprites\spr_EnemyHB</sprite>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\spr_Health</sprite>
@@ -50,6 +51,7 @@
         <sprite>sprites\spr_ShotgunShell</sprite>
       </sprites>
       <sprites name="Grenade">
+        <sprite>sprites\spr_Grenade_old</sprite>
         <sprite>sprites\spr_Grenade</sprite>
         <sprite>sprites\spr_GrenadeExplode</sprite>
       </sprites>
@@ -60,6 +62,11 @@
       <sprite>sprites\spr_TentLightBlue</sprite>
       <sprite>sprites\spr_TentLightYellow</sprite>
       <sprite>sprites\spr_TentLightGreen</sprite>
+    </sprites>
+    <sprites name="Explosion">
+      <sprite>sprites\spr_ExplosionParticle</sprite>
+      <sprite>sprites\spr_ExplosionCenter</sprite>
+      <sprite>sprites\spr_ExplosionSmoke</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -83,6 +90,10 @@
     </scripts>
     <scripts name="Weapon">
       <script>scripts\scr_startGrenadeTimer.gml</script>
+    </scripts>
+    <scripts name="Particles">
+      <script>scripts\scr_createPartTypeSprite.gml</script>
+      <script>scripts\scr_createExplosion.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -119,6 +130,10 @@
     </objects>
     <objects name="Lights">
       <object>objects\obj_Tentlight</object>
+    </objects>
+    <objects name="Particles">
+      <object>objects\obj_Particles</object>
+      <object>objects\obj_Explosion_p</object>
     </objects>
   </objects>
   <rooms name="rooms">

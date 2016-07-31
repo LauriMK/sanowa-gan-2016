@@ -151,6 +151,7 @@ draw_sprite(spr_CurrentBgr, 0, 260, 5);
 
 
 
+
 </string>
           </argument>
         </arguments>
