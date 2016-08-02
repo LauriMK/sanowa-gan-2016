@@ -35,7 +35,7 @@ enemyID = noone;
 hitPoints = 100;
 
 //Built-in variables
-speed = 15;
+speed = 18;
 </string>
           </argument>
         </arguments>
