@@ -99,6 +99,13 @@ with(self){
         
         effect_create_below(ef_smoke, x, y,0.6,c_red);
         effect_create_below(ef_smoke, x, y,0.5,c_orange); 
+       
+        scr_spawnItem();
+        instance_destroy();
+
+    }
+    
+}
         /*
         var audio2 = audio_play_sound(snd_DestroyBasic,8,false);
         audio_sound_gain(audio2, 0.3, 0);
@@ -113,12 +120,7 @@ with(self){
             break;
 
         }
-        */        
-        instance_destroy();
-
-    }
-    
-}
+        */ 
 </string>
           </argument>
         </arguments>

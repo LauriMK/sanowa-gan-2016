@@ -48,7 +48,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(self.x, self.y, obj_PwrHealth);
+            <string>/// Spawn item
+
+if(obj_EnemySpawner.itemToSpawn == 1){
+
+    instance_create(self.x, self.y, obj_PwrHealth);
+}
+else if(obj_EnemySpawner.itemToSpawn == 2){
+
+    instance_create(self.x, self.y, obj_PwrSpread);
+}
+else if(obj_EnemySpawner.itemToSpawn == 3){
+
+    instance_create(self.x, self.y, obj_PwrShotgun);
+}
+else if(obj_EnemySpawner.itemToSpawn == 4){
+
+    instance_create(self.x, self.y, obj_PwrGrenade);
+}
+
+
 instance_destroy();
 </string>
           </argument>
