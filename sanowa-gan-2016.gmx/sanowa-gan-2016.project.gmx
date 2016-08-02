@@ -95,6 +95,10 @@
       <script>scripts\scr_createPartTypeSprite.gml</script>
       <script>scripts\scr_createExplosion.gml</script>
     </scripts>
+    <scripts name="Spawner">
+      <script>scripts\scr_spawnItem.gml</script>
+      <script>scripts\scr_whatWeapon.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_Multiply.shader</shader>
@@ -127,6 +131,7 @@
       <object>objects\obj_PwrGrenade</object>
       <object>objects\obj_PwrHealth</object>
       <object>objects\obj_PwrSpawnFlash</object>
+      <object>objects\obj_PwrParent</object>
     </objects>
     <objects name="Lights">
       <object>objects\obj_Tentlight</object>
