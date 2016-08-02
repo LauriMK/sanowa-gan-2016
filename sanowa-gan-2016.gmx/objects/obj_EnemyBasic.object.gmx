@@ -187,27 +187,40 @@ if(!self.backwards){
 
 if(other.enemyID != self.id){
 
-  if(distance_to_point(obj_Player.x,obj_Player.y) &gt;= 500){ 
+    if(distance_to_point(obj_Player.x,obj_Player.y) &gt;= 500){ 
     
-        self.hitPoints -= 15;         
+        self.hitPoints -= 5;    
+        other.hitPoints -= 100;     
     }
     
-    else{
+    else if (distance_to_point(obj_Player.x,obj_Player.y) &gt;= 300) &amp;&amp; (distance_to_point(obj_Player.x,obj_Player.y) &lt;= 500) {
+        
+        self.hitPoints -= 12.5;
+        other.hitPoints -= 50;
+    }
+    
+    else {
     
         self.hitPoints -= 25;
+        other.hitPoints -= 34;
+    
     }
     
     
-    //tuhoutuuko bullet vai jatkaako matkaa
-    var randomNumber = irandom_range(99, 100);
-    other.hitPoints -= randomNumber;
     
     //knockback
     self.backwards = true;
-    speed = -1.5; 
-    alarm[0]= room_speed * 0.1;  
     
+    if(distance_to_point(obj_Player.x,obj_Player.y) &lt;=350) {
+        speed = -20; 
+        alarm[0]= room_speed * 0.08;
+    }
+    else {
+        speed = -5;
+        alarm[0] = room_speed * 0.1;
+    }  
     
+    //hit effects
     var dir = point_direction(x,y,other.x,other.y);
     effect_create_above(ef_flare, x+lengthdir_x(10,dir), y+lengthdir_y(10,dir), 0, c_orange); 
     
@@ -243,8 +256,8 @@ other.enemyID = self.id;
 self.hitPoints -= 10; 
 
 self.backwards = true;
-speed = -5; 
-alarm[0]= room_speed * 0.08;  
+speed = -2; 
+alarm[0]= room_speed * 0.2;  
 
 
 var dir = point_direction(x,y,other.x,other.y);

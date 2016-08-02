@@ -68,8 +68,7 @@ else if(weapon == WEAPON_SPREAD){
 }
 else if(weapon == WEAPON_SHOTGUN){
     
-    
-    
+           
         if(loading == false){
             cx = x + lengthdir_x(BULLET_OFFSET2, image_angle+BULLET_ANGLE2);
             cy = y + lengthdir_y(BULLET_OFFSET2, image_angle+BULLET_ANGLE2);
@@ -131,9 +130,15 @@ else if(weapon == WEAPON_SHOTGUN){
             var bullet18 = instance_create(cx + lengthdir_x(BULLET_OFFSET, image_angle+BULLET_ANGLE), cy + lengthdir_y(BULLET_OFFSET, image_angle+BULLET_ANGLE), obj_ShotgunShell); 
             bullet18.direction = obj_Player.direction+BULLET_ANGLE-19; 
             bullet18.image_angle = obj_Player.direction+BULLET_ANGLE-19;
+            var bullet19 = instance_create(cx + lengthdir_x(BULLET_OFFSET, image_angle+BULLET_ANGLE), cy + lengthdir_y(BULLET_OFFSET, image_angle+BULLET_ANGLE), obj_ShotgunShell); 
+            bullet19.direction = obj_Player.direction+BULLET_ANGLE+1.5; 
+            bullet19.image_angle = obj_Player.direction+BULLET_ANGLE+1.5;
+            var bullet20 = instance_create(cx + lengthdir_x(BULLET_OFFSET, image_angle+BULLET_ANGLE), cy + lengthdir_y(BULLET_OFFSET, image_angle+BULLET_ANGLE), obj_ShotgunShell); 
+            bullet20.direction = obj_Player.direction+BULLET_ANGLE-1.5; 
+            bullet20.image_angle = obj_Player.direction+BULLET_ANGLE-1.5;
             
             
-            var bullet_center_f = instance_create(cx + lengthdir_x(BULLET_OFFSET+30, image_angle+BULLET_ANGLE), cy + lengthdir_y(BULLET_OFFSET+15, image_angle+BULLET_ANGLE), obj_ShotgunShell); 
+            /* var bullet_center_f = instance_create(cx + lengthdir_x(BULLET_OFFSET+30, image_angle+BULLET_ANGLE), cy + lengthdir_y(BULLET_OFFSET+15, image_angle+BULLET_ANGLE), obj_ShotgunShell); 
             bullet_center_f.direction = obj_Player.direction+BULLET_ANGLE; 
             bullet_center_f.image_angle = obj_Player.direction+BULLET_ANGLE;            
             
@@ -199,6 +204,7 @@ else if(weapon == WEAPON_SHOTGUN){
             bullet38.direction = obj_Player.direction+BULLET_ANGLE-20; 
             bullet38.image_angle = obj_Player.direction+BULLET_ANGLE-20;                                   
             
+            */
                         
             var sound = audio_play_sound(snd_shotgun, 10, false);
             audio_sound_pitch(sound, 1 + ( random_range(-0.01,0.01) ) );
