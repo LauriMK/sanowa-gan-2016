@@ -9,4 +9,3 @@ repeat(15){
     
 }
 audio_play_sound(snd_grenadeExplode, 15, false);
-

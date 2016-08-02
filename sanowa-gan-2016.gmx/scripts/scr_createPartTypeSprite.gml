@@ -16,4 +16,3 @@ part_type_life(type, min_life, max_life);
 part_type_orientation(type, 0, 360, 0, 0, 0);
 
 return type;
-

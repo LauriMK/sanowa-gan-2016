@@ -34,6 +34,9 @@ randomize();
 
 //Instance variables
 canSpawn = true;
+itemToSpawn = 1;
+enemiesSpawned = 0;
+enemiesOnScreen = 0;
 
 
 //Built-in variables
@@ -117,6 +120,7 @@ if(canSpawn){
     }
 
     var inst = instance_create(xPos, yPos, obj_EnemyBasic);
+    enemiesSpawned++;
     
     
     canSpawn = false;
@@ -124,6 +128,9 @@ if(canSpawn){
     alarm[0] = room_speed * 0.75; 
 
 }
+
+enemiesOnScreen = instance_number(obj_EnemyBasic);
+
 </string>
           </argument>
         </arguments>
