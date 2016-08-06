@@ -36,5 +36,6 @@ if(instance_number(obj_PwrParent) < 1){
     }
     else {
         //do nothing
+        
     }
 }

@@ -189,7 +189,7 @@ if(!self.backwards){
 
 if(other.enemyID != self.id){
 
-    if(distance_to_point(obj_Player.x,obj_Player.y) &gt;= 500){ 
+    if(distance_to_point(obj_Player.x,obj_Player.y) &gt; 500){ 
     
         self.hitPoints -= 5;    
         other.hitPoints -= 100;     
