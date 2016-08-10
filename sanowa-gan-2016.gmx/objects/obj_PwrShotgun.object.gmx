@@ -62,7 +62,6 @@ if(obj_Player.powerUpSlot == 0){
     other.powerUpSlot = POWERUP_SLOT_SHOTGUN;
     
     audio_play_sound(snd_click,14,false);
-    instance_create(x+random_range(5,45), y+random_range(5,45), obj_PwrGrenade);
     instance_destroy();
 }
 </string>
