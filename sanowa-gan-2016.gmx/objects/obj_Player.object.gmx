@@ -48,6 +48,8 @@ powerUpSlot = 0;
 
 ls_on = 1;
 
+
+
 //Built-in variables
 friction = 0.5;
 
@@ -179,8 +181,14 @@ else if(keyDown){
     speed = -PLAYER_SPEED_BACKWARDS;
 }
 
+if (speed == 0) {
+    image_speed = 0;
+    image_index = 0; 
+}
 
-
+else {
+    image_speed = 0.2;
+}
 </string>
           </argument>
         </arguments>
@@ -247,7 +255,7 @@ image_angle = direction;
 if(keyShoot){
 
     sprite_index = spr_PlayerShoot;
-
+  
 }
 else{
     sprite_index = spr_PlayerRun;
