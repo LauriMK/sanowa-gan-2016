@@ -51,7 +51,6 @@
         <sprite>sprites\spr_ShotgunShell</sprite>
       </sprites>
       <sprites name="Grenade">
-        <sprite>sprites\spr_Grenade_old</sprite>
         <sprite>sprites\spr_Grenade</sprite>
         <sprite>sprites\spr_GrenadeExplode</sprite>
       </sprites>
