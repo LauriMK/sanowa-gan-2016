@@ -7,18 +7,18 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>2</bboxmode>
-  <bbox_left>45</bbox_left>
+  <bbox_left>40</bbox_left>
   <bbox_right>90</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>127</bbox_bottom>
+  <bbox_bottom>121</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>128</width>
-  <height>128</height>
+  <width>122</width>
+  <height>122</height>
   <frames>
     <frame index="0">images\spr_PlayerRun_0.png</frame>
     <frame index="1">images\spr_PlayerRun_1.png</frame>
@@ -28,5 +28,13 @@
     <frame index="5">images\spr_PlayerRun_5.png</frame>
     <frame index="6">images\spr_PlayerRun_6.png</frame>
     <frame index="7">images\spr_PlayerRun_7.png</frame>
+    <frame index="8">images\spr_PlayerRun_8.png</frame>
+    <frame index="9">images\spr_PlayerRun_9.png</frame>
+    <frame index="10">images\spr_PlayerRun_10.png</frame>
+    <frame index="11">images\spr_PlayerRun_11.png</frame>
+    <frame index="12">images\spr_PlayerRun_12.png</frame>
+    <frame index="13">images\spr_PlayerRun_13.png</frame>
+    <frame index="14">images\spr_PlayerRun_14.png</frame>
+    <frame index="15">images\spr_PlayerRun_15.png</frame>
   </frames>
 </sprite>
