@@ -123,6 +123,7 @@
       <object>objects\obj_DrawGUI</object>
       <object>objects\obj_AmbientSoundControl</object>
       <object>objects\obj_LightSystem</object>
+      <object>objects\obj_ScoreRoomCtrl</object>
     </objects>
     <objects name="PowerUp">
       <object>objects\obj_PwrSpread</object>
@@ -142,6 +143,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Game</room>
+    <room>rooms\rm_Score</room>
   </rooms>
   <constants number="19">
     <constant name="PLAYER_ROTATION">5.5</constant>
