@@ -69,6 +69,7 @@ draw_sprite(spr_NextBgr, 0, 360, 4);
 draw_text(0+20,47,obj_Player.magazine);
 draw_text(100, 17, obj_Player.playerHitPoints);
 
+draw_text(480, 17, "Points: " + string(obj_Player.scorePoints));
 
 //Mikä poweruppi on otettu taskuun
 
