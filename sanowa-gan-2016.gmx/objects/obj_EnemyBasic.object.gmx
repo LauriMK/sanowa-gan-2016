@@ -197,8 +197,8 @@ if(other.enemyID != self.id){
     
     else if (distance_to_point(obj_Player.x,obj_Player.y) &gt;= 300) &amp;&amp; (distance_to_point(obj_Player.x,obj_Player.y) &lt;= 500) {
         
-        self.hitPoints -= 12.5;
-        other.hitPoints -= 50;
+        self.hitPoints -= 17.5;
+        other.hitPoints -= 45;
     }
     
     else {
@@ -366,13 +366,30 @@ with(other){
     }
 
 }
-if(!audio_is_playing(snd_HurtHit1) &amp;&amp; !audio_is_playing(snd_HurtHit2)){
+if(!audio_is_playing(snd_HurtHit1) &amp;&amp; !audio_is_playing(snd_HurtHit2) &amp;&amp; !audio_is_playing(snd_HurtHit3)){
 
-    if(irandom_range(1,2) == 1){
-        audio_play_sound(snd_HurtHit1, 5, false);
+    var num1 = irandom_range(1,3);
+    if(num1 == 1){
+        audio_play_sound(snd_HurtHit1, 2, false);
+    }
+    else if (num1 == 2){
+        audio_play_sound(snd_HurtHit2, 2, false);
     }
     else{
-        audio_play_sound(snd_HurtHit2, 5, false);
+        audio_play_sound(snd_HurtHit3, 2, false);
+    }
+}
+if(!audio_is_playing(snd_EnemyBite1) &amp;&amp; !audio_is_playing(snd_EnemyBite2) &amp;&amp; !audio_is_playing(snd_EnemyBite3)){
+
+    var num2 = irandom_range(1,3);
+    if(num2 == 1){
+        audio_play_sound(snd_EnemyBite1, 1, false);
+    }
+    else if (num2 == 2){
+        audio_play_sound(snd_EnemyBite2, 1, false);
+    }
+    else{
+        audio_play_sound(snd_EnemyBite3, 1, false);
     }
 }
 </string>
