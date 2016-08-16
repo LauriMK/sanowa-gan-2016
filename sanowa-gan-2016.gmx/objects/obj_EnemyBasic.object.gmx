@@ -366,6 +366,15 @@ with(other){
     }
 
 }
+if(!audio_is_playing(snd_HurtHit1) &amp;&amp; !audio_is_playing(snd_HurtHit2)){
+
+    if(irandom_range(1,2) == 1){
+        audio_play_sound(snd_HurtHit1, 5, false);
+    }
+    else{
+        audio_play_sound(snd_HurtHit2, 5, false);
+    }
+}
 </string>
           </argument>
         </arguments>

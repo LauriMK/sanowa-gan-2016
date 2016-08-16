@@ -16,6 +16,17 @@
     <sounds name="UI">
       <sound>sound\snd_click</sound>
     </sounds>
+    <sounds name="Player">
+      <sound>sound\snd_HurtDeath</sound>
+      <sound>sound\snd_HurtHit1</sound>
+      <sound>sound\snd_HurtHit2</sound>
+    </sounds>
+    <sounds name="Enemy">
+      <sound>sound\snd_EnemyBit</sound>
+    </sounds>
+    <sounds name="Music">
+      <sound>sound\snd_Music1</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -123,6 +134,7 @@
       <object>objects\obj_DrawGUI</object>
       <object>objects\obj_AmbientSoundControl</object>
       <object>objects\obj_LightSystem</object>
+      <object>objects\obj_ScoreRoomCtrl</object>
     </objects>
     <objects name="PowerUp">
       <object>objects\obj_PwrSpread</object>
@@ -142,6 +154,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Game</room>
+    <room>rooms\rm_Score</room>
   </rooms>
   <constants number="19">
     <constant name="PLAYER_ROTATION">5.5</constant>
