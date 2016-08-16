@@ -56,6 +56,8 @@ deathOn = 1;
 //Built-in variables
 friction = 0.5;
 
+var music = audio_play_sound(snd_Music1, 7, true);
+audio_sound_gain(music, 0.80, 0);
 
 
 </string>
@@ -293,7 +295,12 @@ if(deathOn){
     
     if(playerHitPoints &lt;= 0){
     
-    room_goto_next();
+        audio_play_sound(snd_HurtDeath, 5, false);
+        
+        for(var i = 0; i &lt; 10000; i++){
+            //do nothing
+        }
+        room_goto_next();
     
     }
     
