@@ -1,5 +1,48 @@
 ///scr_spawnItem
 
+if(instance_number(obj_PwrParent) < 3){
+
+    var number = irandom_range(1, 99);
+    
+    if(number > 0 && number < 20){
+    
+        obj_EnemySpawner.itemToSpawn = 1; // health spawn
+        instance_create(x, y, obj_PwrSpawnFlash);
+    
+    
+    }
+    else if(number > 19 && number < 40){
+    
+        obj_EnemySpawner.itemToSpawn = 2; // 
+        instance_create(x, y, obj_PwrSpawnFlash);
+    }
+    
+    else if(number > 39 && number < 60){
+    
+        obj_EnemySpawner.itemToSpawn = 3; // 
+        instance_create(x, y, obj_PwrSpawnFlash);
+    }
+    else if(number > 59 && number < 80){
+    
+        obj_EnemySpawner.itemToSpawn = 4; // 
+        instance_create(x, y, obj_PwrSpawnFlash);
+    }
+    else if(number > 79 && number < 100){
+    
+        //obj_EnemySpawner.itemToSpawn = 5; // 
+        //instance_create(x, y, obj_PwrSpawnFlash);
+    }
+
+}
+
+
+
+
+
+
+
+
+/*
 if(instance_number(obj_PwrParent) < 1){
 
     var willItSpawn = 50;
@@ -38,4 +81,4 @@ if(instance_number(obj_PwrParent) < 1){
         //do nothing
         
     }
-}
+}*/

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Create
 
-ambient_light = 0.9;
+ambient_light = 0.7;
 
 light_surface = surface_create(view_wview, view_hview);
 
@@ -100,7 +100,7 @@ surface_set_target(light_surface);
 
 draw_clear_alpha(c_black, 1);
 draw_set_blend_mode(bm_add);
-draw_sprite_ext(spr_light, 0, obj_Player.x, obj_Player.y+20, 1, 1, obj_Player.direction+48, c_white, 1);
+draw_sprite_ext(spr_light, 0, obj_Player.x, obj_Player.y+20, 1, 1, obj_Player.direction+43, c_white, 1);
 
 with(obj_Tentlight)
 {
