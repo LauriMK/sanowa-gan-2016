@@ -20,9 +20,12 @@
       <sound>sound\snd_HurtDeath</sound>
       <sound>sound\snd_HurtHit1</sound>
       <sound>sound\snd_HurtHit2</sound>
+      <sound>sound\snd_HurtHit3</sound>
     </sounds>
     <sounds name="Enemy">
-      <sound>sound\snd_EnemyBit</sound>
+      <sound>sound\snd_EnemyBite1</sound>
+      <sound>sound\snd_EnemyBite2</sound>
+      <sound>sound\snd_EnemyBite3</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\snd_Music1</sound>
