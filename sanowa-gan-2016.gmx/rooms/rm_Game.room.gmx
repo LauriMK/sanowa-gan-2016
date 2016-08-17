@@ -56,6 +56,7 @@
     <instance objName="obj_EnemySpawner" x="176" y="240" name="inst_722BDAB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_LightSystem" x="256" y="192" name="inst_B5B27FFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Particles" x="160" y="48" name="inst_2D0FA744" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_PartBlood" x="312" y="368" name="inst_B5B7CA8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bck_Grass" x="64" y="128" w="64" h="64" xo="0" yo="0" id="10000027" name="inst_9726EF19" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
