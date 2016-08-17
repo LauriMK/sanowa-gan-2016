@@ -107,6 +107,7 @@
     <scripts name="Particles">
       <script>scripts\scr_createPartTypeSprite.gml</script>
       <script>scripts\scr_createExplosion.gml</script>
+      <script>scripts\scr_spillBlood.gml</script>
     </scripts>
     <scripts name="Spawner">
       <script>scripts\scr_spawnItem.gml</script>
@@ -153,6 +154,7 @@
     <objects name="Particles">
       <object>objects\obj_Particles</object>
       <object>objects\obj_Explosion_p</object>
+      <object>objects\obj_PartBlood</object>
     </objects>
   </objects>
   <rooms name="rooms">
