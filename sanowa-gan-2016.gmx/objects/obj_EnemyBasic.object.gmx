@@ -97,6 +97,8 @@ if(!dying){
     
         if(hitPoints &lt;= 0){
             
+            scr_createDebree(self.x, self.y);
+            
             obj_Player.scorePoints += 5;
             
             
@@ -104,8 +106,8 @@ if(!dying){
             effect_create_below(ef_smoke, x, y,0.5,c_orange); 
            
             scr_spawnItem();
-            sprite_index = spr_BasicEnemyBroken;
-            self.image_speed = 0.20;
+            sprite_index = spr_EnemyBroken;
+            self.image_speed = 0.17;
             self.speed = 0;
             dying = true;
     
@@ -431,10 +433,10 @@ if(!audio_is_playing(snd_EnemyBite1) &amp;&amp; !audio_is_playing(snd_EnemyBite2
 if(dying){
 
     instance_destroy();
-        if(!audio_is_playing(snd_grenadeExplode)){
-        audio_play_sound(snd_grenadeExplode, 5, false);
-        //scr_createExplosion(self.x, self.y);
-    }
+        //if(!audio_is_playing(snd_grenadeExplode)){
+        //audio_play_sound(snd_grenadeExplode, 5, false);
+        
+        //}
 
 
 }

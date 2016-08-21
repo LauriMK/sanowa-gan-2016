@@ -30,9 +30,10 @@
 system2 = part_system_create();
 
 //create 3 particles
-deb1_part = scr_createPartTypeSprite(spr_ExplosionCenter, true, 30, 30, 1, 1, -0.01);
-deb2_part = scr_createPartTypeSprite(spr_ExplosionParticle, true, 30, 30, 1, 1, -0.01);
-deb3_part = scr_createPartTypeSprite(spr_ExplosionSmoke, true, 30, 30, 1, 1, -0.01);
+deb1_part = scr_createPartTypeSprite2(spr_BrokenBlade, true, 30, 30, 0.4, 0.55, 1);
+deb2_part = scr_createPartTypeSprite2(spr_BrokenShield1, true, 30, 30, 0.5, 0.6, 1);
+deb3_part = scr_createPartTypeSprite2(spr_BrokenShield2, true, 30, 30, 0.5, 0.7, 1);
+deb4_part = scr_createPartTypeSprite2(spr_BrokenLeg, true, 30, 30, 1, 1, 1);
  
 
 </string>
@@ -62,6 +63,7 @@ deb3_part = scr_createPartTypeSprite(spr_ExplosionSmoke, true, 30, 30, 1, 1, -0.
 part_type_destroy(deb1_part);
 part_type_destroy(deb2_part);
 part_type_destroy(deb3_part);
+part_type_destroy(deb4_part);
 </string>
           </argument>
         </arguments>

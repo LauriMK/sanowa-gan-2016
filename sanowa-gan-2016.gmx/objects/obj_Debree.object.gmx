@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>100000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,6 +30,10 @@ speed = 3 + random_range(1,5);
 friction = 0.25;
 direction = random(360);
 
+part_particles_create(obj_ParticlesDebree.system2, x-8+random(16), y-8+random(16), obj_ParticlesDebree.deb2_part, 1);
+part_particles_create(obj_ParticlesDebree.system2, x-8+random(16), y-8+random(16), obj_ParticlesDebree.deb3_part, 1);
+part_particles_create(obj_ParticlesDebree.system2, x-8+random(16), y-8+random(16), obj_ParticlesDebree.deb4_part, 1);
+
 </string>
           </argument>
         </arguments>
@@ -53,9 +57,7 @@ direction = random(360);
           <argument>
             <kind>1</kind>
             <string>///Step
-part_particles_create(obj_Particles.system2, x-8+random(16), y-8+random(16), obj_Particles.deb1_part, 1);
-part_particles_create(obj_Particles.system2, x-8+random(16), y-8+random(16), obj_Particles.deb2_part, 1);
-part_particles_create(obj_Particles.system2, x-8+random(16), y-8+random(16), obj_Particles.deb3_part, 1);
+
 //destroy explosion piece
 
 if(speed == 0){
