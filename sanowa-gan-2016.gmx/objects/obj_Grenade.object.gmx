@@ -89,6 +89,7 @@ scr_startGrenadeTimer();
             <string>if(countdownDone != true){
 
     countdownDone = true;
+    
 }
 </string>
           </argument>
@@ -119,6 +120,7 @@ if(speed == 0){
 }
 
 if(countdownDone == true){
+    self.visible = false;
 
     if(firstround == true){
     
@@ -163,6 +165,7 @@ if(countdownDone == true){
           <argument>
             <kind>1</kind>
             <string>countdownDone = true;
+self.visible = false;
 </string>
           </argument>
         </arguments>
