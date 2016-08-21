@@ -40,7 +40,12 @@
     <sprites name="Enemy">
       <sprite>sprites\spr_BasicEnemy</sprite>
       <sprite>sprites\spr_EnemyHB</sprite>
-      <sprite>sprites\spr_BasicEnemyBroken</sprite>
+      <sprites name="BasicEnemyBroken">
+        <sprite>sprites\spr_BrokenLeg</sprite>
+        <sprite>sprites\spr_BrokenBlade</sprite>
+        <sprite>sprites\spr_BrokenShield1</sprite>
+        <sprite>sprites\spr_BrokenShield2</sprite>
+      </sprites>
     </sprites>
     <sprites name="UI">
       <sprite>sprites\spr_Health</sprite>
